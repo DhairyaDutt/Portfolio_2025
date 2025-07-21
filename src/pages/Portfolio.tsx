@@ -224,22 +224,22 @@ const Portfolio = () => {
               <div className="space-y-12">
                 {[
                   {
-                    company: "Tech Corp",
+                    company: "D360",
                     role: "Software Engineering Intern",
-                    duration: "Summer 2023",
-                    description: "Developed full-stack web applications using React and Node.js, improving user engagement by 30%."
+                    duration: "Jan 2023 - May 2023",
+                    description: "Accomplished efficient search and filtering of diamonds as measured by 65% quick rendering of over 1 million diamonds by applying indexing and pagination while developing a full-stack React app from scratch in 3 months."
                   },
                   {
-                    company: "Startup Inc",
-                    role: "Full-Stack Developer Intern", 
-                    duration: "Summer 2022",
-                    description: "Built scalable microservices architecture and implemented CI/CD pipelines for faster deployment."
+                    company: "einfochips",
+                    role: "Software Engineering Intern", 
+                    duration: "June 2022 - August 2022",
+                    description: "Automated the email-sending functionality to employees, which reduced 25+ hours per month and manual repetitive work of the employers. Built a GUI for the email-sending feature, now used by over 200+ faculties."
                   },
                   {
-                    company: "Innovation Labs",
-                    role: "Software Developer Intern",
-                    duration: "Summer 2021", 
-                    description: "Created machine learning models for data analysis and built RESTful APIs for client applications."
+                    company: "TechTable",
+                    role: "Software Engineering Intern",
+                    duration: "March 2021 - August 2021", 
+                    description: "Made 5 front-end pages on a professional website for a client and satisfying the client’s need called “Teenr”. Contributed to the ”My team” section of the firm’s official website, consisting of 20+ team members using CSS styling."
                   }
                 ].map((exp, index) => (
                   <PixelCard key={index} variant="terminal" className="ml-16 pixel-float no-controls">
