@@ -76,11 +76,11 @@ const Portfolio = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-green rounded-full"></span>
-                    <span className="text-muted-foreground">Languages: C++, MySQL, Java, Python</span>
+                    <span className="text-muted-foreground">Languages: C++, MySQL, Java, Python, Javascript</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-cyan rounded-full"></span>
-                    <span className="text-muted-foreground">Web Development: React, Figma</span>
+                    <span className="text-muted-foreground">Web Development and Analysis: React, Figma, Looker Studio</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-cyan rounded-full"></span>
