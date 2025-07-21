@@ -29,10 +29,10 @@ const Portfolio = () => {
               Full-Stack Dev
             </p>
             <div className="mt-8 flex justify-center space-x-6">
-              <a href="https://github.com/DhairyaDutt" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
+              <a href="https://github.com/DhairyaDutt" target="_blank" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
                 <Github size={32} />
               </a>
-              <a href="https://www.linkedin.com/in/dhairya-dutt/" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
+              <a href="https://www.linkedin.com/in/dhairya-dutt/" target="_blank" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
                 <Linkedin size={32} />
               </a>
               <a href="dd8053@g.rit.edu" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
