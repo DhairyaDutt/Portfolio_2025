@@ -341,7 +341,7 @@ const Portfolio = () => {
               </p>
               <div className="flex justify-center space-x-8">
                 <a 
-                  href="mailto:dhairya@example.com" 
+                  href="mailto:dhairyadut2022@gmail.com" 
                   className="flex flex-col items-center space-y-2 text-pixel-cyan hover:text-pixel-cyan/80 transition-colors"
                 >
                   <div className="w-16 h-16 bg-pixel-cyan/20 border border-pixel-cyan rounded-lg flex items-center justify-center">
@@ -350,7 +350,7 @@ const Portfolio = () => {
                   <span>Email</span>
                 </a>
                 <a 
-                  href="https://linkedin.com/in/dhairya" 
+                  href="https://www.linkedin.com/in/dhairya-dutt/" 
                   className="flex flex-col items-center space-y-2 text-pixel-purple hover:text-pixel-purple/80 transition-colors"
                 >
                   <div className="w-16 h-16 bg-pixel-purple/20 border border-pixel-purple rounded-lg flex items-center justify-center">
@@ -359,7 +359,7 @@ const Portfolio = () => {
                   <span>LinkedIn</span>
                 </a>
                 <a 
-                  href="https://github.com/dhairya" 
+                  href="https://github.com/DhairyaDutt" 
                   className="flex flex-col items-center space-y-2 text-pixel-green hover:text-pixel-green/80 transition-colors"
                 >
                   <div className="w-16 h-16 bg-pixel-green/20 border border-pixel-green rounded-lg flex items-center justify-center">
