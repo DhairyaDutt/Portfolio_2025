@@ -111,15 +111,15 @@ const Portfolio = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-pixel-yellow">Master of Science</h3>
-                    <p className="text-pixel-cyan">Computer Science</p>
+                    <p className="text-pixel-cyan">Information Technology and Analytics</p>
                     <div className="flex items-center space-x-4 mt-2 text-muted-foreground">
                       <div className="flex items-center space-x-1">
                         <Calendar size={16} />
-                        <span>2022-2024</span>
+                        <span>August 2023 - May 2025</span>
                       </div>
                       <div className="flex items-center space-x-1">
                         <MapPin size={16} />
-                        <span>University Name</span>
+                        <span>Rochester Institute of Technology</span>
                       </div>
                     </div>
                   </div>
@@ -133,15 +133,15 @@ const Portfolio = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-pixel-yellow">Bachelor of Science</h3>
-                    <p className="text-pixel-cyan">Computer Engineering</p>
+                    <p className="text-pixel-cyan">ECE + CS</p>
                     <div className="flex items-center space-x-4 mt-2 text-muted-foreground">
                       <div className="flex items-center space-x-1">
                         <Calendar size={16} />
-                        <span>2018-2022</span>
+                        <span>June 2019 - June 2023</span>
                       </div>
                       <div className="flex items-center space-x-1">
                         <MapPin size={16} />
-                        <span>University Name</span>
+                        <span>Nirma University</span>
                       </div>
                     </div>
                   </div>
