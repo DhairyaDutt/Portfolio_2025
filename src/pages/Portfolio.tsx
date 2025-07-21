@@ -269,14 +269,24 @@ const Portfolio = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-pixel-yellow mb-2">
-                      "Advanced Machine Learning Techniques for Real-Time Data Processing"
+                      "Development and Testing of Automation Tools using Python "
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Published in International Journal of Computer Science, 2023
+                      Published in International Journal of Advances in Soft Computing and Intelligent Systems
                     </p>
                     <button className="flex items-center space-x-2 text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
-                      <ExternalLink size={16} />
-                      <span>Read Paper</span>
+                      <a
+                        href="https://sciencetransactions.com/index.php/ijascis/article/view/50/45"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-pixel-cyan hover:text-pixel-cyan/80 transition-colors"
+                      >
+                        <ExternalLink size={16} />
+                        <span>Read Paper</span>
+                      </a>
+
+                      {/* <ExternalLink size={16} />
+                      <span>Read Paper</span> */}
                     </button>
                   </div>
                 </div>
