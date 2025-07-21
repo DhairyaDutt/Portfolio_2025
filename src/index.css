@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Pixel Art Portfolio Design System - Retro Gaming Aesthetic */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Pixel Art Color Palette */
+    --background: 220 13% 7%;
+    --foreground: 60 100% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 13% 12%;
+    --card-foreground: 60 100% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 13% 12%;
+    --popover-foreground: 60 100% 85%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 13% 7%;
+    --primary-glow: 195 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 285 100% 60%;
+    --secondary-foreground: 220 13% 7%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 20%;
+    --muted-foreground: 220 9% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 85 100% 60%;
+    --accent-foreground: 220 13% 7%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 60 100% 85%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 25%;
+    --input: 220 13% 15%;
+    --ring: 195 100% 50%;
 
-    --radius: 0.5rem;
+    /* Pixel Art Specific Colors */
+    --pixel-green: 120 100% 50%;
+    --pixel-orange: 30 100% 60%;
+    --pixel-pink: 330 100% 70%;
+    --pixel-yellow: 60 100% 70%;
+    --pixel-purple: 285 100% 60%;
+    --pixel-cyan: 195 100% 50%;
+    
+    /* Terminal Colors */
+    --terminal-bg: 120 100% 15%;
+    --terminal-border: 120 100% 40%;
+    --terminal-text: 120 100% 80%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-neon: linear-gradient(90deg, hsl(var(--pixel-cyan)), hsl(var(--pixel-purple)));
+    --gradient-terminal: linear-gradient(180deg, hsl(var(--terminal-bg)), hsl(120 100% 10%));
+
+    /* Shadows & Effects */
+    --shadow-pixel: 0 0 20px hsl(var(--primary-glow) / 0.3);
+    --shadow-neon: 0 0 30px hsl(var(--pixel-cyan) / 0.5);
+    --shadow-terminal: 0 0 40px hsl(var(--terminal-border) / 0.4);
+
+    /* Animations */
+    --transition-pixel: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --flicker-speed: 2s;
+
+    --radius: 0rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +129,131 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mono;
+    font-family: 'Space Mono', 'Courier New', monospace;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', 'Space Mono', monospace;
+  }
+}
+
+@layer components {
+  /* Pixel Art Button Styles */
+  .pixel-button {
+    @apply relative inline-block px-6 py-3 text-sm font-bold uppercase tracking-wider;
+    @apply bg-primary text-primary-foreground border-2 border-primary;
+    @apply transition-all duration-200 cursor-pointer;
+    font-family: 'Orbitron', monospace;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+    box-shadow: 
+      inset 2px 2px 0px hsl(var(--primary-glow) / 0.3),
+      inset -2px -2px 0px hsl(var(--primary) / 0.7),
+      var(--shadow-pixel);
+  }
+
+  .pixel-button:hover {
+    @apply bg-primary-glow;
+    box-shadow: 
+      inset 2px 2px 0px hsl(var(--primary-glow) / 0.5),
+      inset -2px -2px 0px hsl(var(--primary) / 0.9),
+      var(--shadow-neon);
+    transform: translate(-1px, -1px);
+  }
+
+  .pixel-button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 
+      inset -2px -2px 0px hsl(var(--primary-glow) / 0.3),
+      inset 2px 2px 0px hsl(var(--primary) / 0.7);
+  }
+
+  /* Terminal Card Style */
+  .terminal-card {
+    @apply relative p-6 border-2;
+    background: var(--gradient-terminal);
+    border-color: hsl(var(--terminal-border));
+    box-shadow: var(--shadow-terminal);
+  }
+
+  .terminal-card::before {
+    content: "";
+    @apply absolute top-2 left-2 right-2 h-6;
+    background: linear-gradient(90deg, 
+      hsl(var(--destructive)) 0% 15%, 
+      hsl(var(--pixel-yellow)) 15% 30%, 
+      hsl(var(--pixel-green)) 30% 45%, 
+      transparent 45%
+    );
+    border-radius: 4px 4px 0 0;
+  }
+
+  /* Pixel Art Animations */
+  .pixel-flicker {
+    animation: flicker var(--flicker-speed) infinite alternate;
+  }
+
+  .pixel-glow {
+    @apply relative;
+    text-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor;
+  }
+
+  .pixel-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Torch/Flashlight Effect */
+  .torch-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+      transparent 150px, 
+      rgba(0,0,0,0.95) 200px
+    );
+    pointer-events: none;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+  }
+
+  /* Scanlines Effect */
+  .scanlines::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 0, 0.03) 2px,
+      rgba(0, 255, 0, 0.03) 4px
+    );
+    pointer-events: none;
+  }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
