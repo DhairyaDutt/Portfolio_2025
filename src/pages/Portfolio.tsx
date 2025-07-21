@@ -29,13 +29,13 @@ const Portfolio = () => {
               Full-Stack Dev
             </p>
             <div className="mt-8 flex justify-center space-x-6">
-              <a href="#" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
+              <a href="https://github.com/DhairyaDutt" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
                 <Github size={32} />
               </a>
-              <a href="#" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
+              <a href="https://www.linkedin.com/in/dhairya-dutt/" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
                 <Linkedin size={32} />
               </a>
-              <a href="#" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
+              <a href="dd8053@g.rit.edu" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
                 <Mail size={32} />
               </a>
             </div>
@@ -60,9 +60,7 @@ const Portfolio = () => {
                     <div className="mb-2">$ whoami</div>
                     <div className="mb-4 text-pixel-green">dhairya@portfolio:~$</div>
                     <div className="text-foreground">
-                      A passionate full-stack developer with expertise in modern web technologies.
-                      I love building innovative solutions and exploring the intersection of 
-                      technology and creativity.
+                      A passionate Software Engineer who loves problem solving.
                     </div>
                   </div>
                 </div>
