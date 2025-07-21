@@ -18,7 +18,7 @@ const Portfolio = () => {
       
       <Navigation />
       
-      <div className="relative z-10 px-4 md:px-8 lg:px-16">
+      <div className="relative z-10 px-4 md:px-8 lg:px-16 md:pl-24 lg:pl-20">
         {/* Home Section */}
         <section id="home" className="min-h-screen flex items-center justify-center">
           <div className="text-center">
@@ -45,7 +45,7 @@ const Portfolio = () => {
         {/* About Me Section */}
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow mb-12 text-center">
+            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
               About Me
             </h2>
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -73,19 +73,19 @@ const Portfolio = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-green rounded-full"></span>
-                    <span>React, TypeScript, Node.js</span>
+                    <span className="text-muted-foreground">React, TypeScript, Node.js</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-cyan rounded-full"></span>
-                    <span>Machine Learning & AI</span>
+                    <span className="text-muted-foreground">Machine Learning & AI</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-purple rounded-full"></span>
-                    <span>Cloud Computing & DevOps</span>
+                    <span className="text-muted-foreground">Cloud Computing & DevOps</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-yellow rounded-full"></span>
-                    <span>Open Source Contributor</span>
+                    <span className="text-muted-foreground">Open Source Contributor</span>
                   </div>
                 </div>
               </PixelCard>
@@ -96,7 +96,7 @@ const Portfolio = () => {
         {/* Education Section */}
         <section id="education" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow mb-12 text-center">
+            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
               Education
             </h2>
             <div className="space-y-8">
@@ -150,7 +150,7 @@ const Portfolio = () => {
         {/* Projects Section */}
         <section id="projects" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow mb-12 text-center">
+            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
               Featured Projects
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -212,7 +212,7 @@ const Portfolio = () => {
         {/* Experience Section */}
         <section id="experience" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow mb-12 text-center">
+            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
               Experience
             </h2>
             <div className="relative">
@@ -238,7 +238,7 @@ const Portfolio = () => {
                     description: "Created machine learning models for data analysis and built RESTful APIs for client applications."
                   }
                 ].map((exp, index) => (
-                  <PixelCard key={index} variant="terminal" className="ml-16 pixel-float">
+                  <PixelCard key={index} variant="terminal" className="ml-16 pixel-float no-controls">
                     <div className="absolute -left-20 top-8 w-4 h-4 bg-pixel-cyan rounded-full"></div>
                     <h3 className="text-xl font-bold text-pixel-yellow">{exp.role}</h3>
                     <p className="text-pixel-cyan font-semibold">{exp.company}</p>
@@ -254,7 +254,7 @@ const Portfolio = () => {
         {/* Publications Section */}
         <section id="publications" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow mb-12 text-center">
+            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
               Publications
             </h2>
             <div className="flex justify-center">
@@ -284,10 +284,10 @@ const Portfolio = () => {
         {/* Hobbies Section */}
         <section id="hobbies" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow mb-12 text-center">
+            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
               Hobbies & Interests
             </h2>
-            <PixelCard variant="terminal" className="pixel-float">
+            <PixelCard variant="terminal" className="pixel-float no-controls">
               <div className="mt-8">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
                   {[
@@ -317,10 +317,10 @@ const Portfolio = () => {
         {/* Contact Section */}
         <section id="contact" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow mb-12">
+            <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12">
               Get In Touch
             </h2>
-            <PixelCard variant="glow" className="pixel-float">
+            <PixelCard variant="default" className="pixel-float">
               <p className="text-xl text-foreground mb-8">
                 Let's build something amazing together! Whether you have a project in mind 
                 or just want to chat about technology, I'd love to hear from you.

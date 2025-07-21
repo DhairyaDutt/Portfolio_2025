@@ -17,7 +17,7 @@ export const PixelCard = ({
     default: 'bg-card border-2 border-border',
     terminal: 'terminal-card',
     project: 'bg-gradient-to-br from-card to-muted border-2 border-primary/30',
-    glow: 'bg-card border-2 border-primary pixel-glow'
+    glow: 'bg-card border-2 border-primary'
   };
 
   return (
@@ -27,6 +27,7 @@ export const PixelCard = ({
         variants[variant],
         hover && 'hover:transform hover:scale-105 hover:shadow-lg cursor-pointer',
         'scanlines',
+        variant === 'terminal' && !className?.includes('no-controls') && 'with-controls',
         className
       )}
     >
