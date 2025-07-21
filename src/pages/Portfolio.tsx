@@ -299,7 +299,7 @@ const Portfolio = () => {
         <section id="hobbies" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
-              Hobbies & Interests
+              Hobbies & Achievements
             </h2>
             <PixelCard variant="terminal" className="pixel-float no-controls">
               <div className="mt-8">
@@ -308,7 +308,7 @@ const Portfolio = () => {
                     { icon: "🎮", label: "Gaming", color: "pixel-cyan" },
                     { icon: "📚", label: "Reading", color: "pixel-green" },
                     { icon: "💪", label: "Fitness", color: "pixel-orange" },
-                    { icon: "🎵", label: "Music", color: "pixel-purple" }
+                    { icon: "🎵", label: "Guitar", color: "pixel-purple" }
                   ].map((hobby, index) => (
                     <div key={index} className="text-center">
                       <div className={`w-16 h-16 bg-${hobby.color}/20 border border-${hobby.color} rounded-lg mx-auto mb-2 flex items-center justify-center text-2xl`}>
@@ -319,9 +319,9 @@ const Portfolio = () => {
                   ))}
                 </div>
                 <p className="text-foreground text-center">
-                  When I'm not coding, you'll find me exploring new games, diving into tech books, 
-                  hitting the gym, or discovering new music. I believe in maintaining a balanced 
-                  lifestyle that fuels creativity and keeps me motivated in my professional work.
+                  When I'm not coding, you'll find me playing CS2, diving into self-development books (trying), 
+                  hitting the gym (trying), or playing GUItar. I'm a knight on Leetcode (1193 best rank). I also strongly bevlieve in giving
+                  back to the community, thus as a graduate asst. I help students in resume reviews and teaching them fundamental CS concepts, I love it :)
                 </p>
               </div>
             </PixelCard>
