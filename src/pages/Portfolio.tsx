@@ -48,8 +48,8 @@ const Portfolio = () => {
             <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
               About Me
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <PixelCard variant="terminal" className="pixel-float">
+            <div className="grid md:grid-cols-2 gap-8 items-stretch">
+              <PixelCard variant="terminal" className="pixel-float no-controls h-full">
                 <div className="mt-8">
                   <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-pixel-cyan to-pixel-purple rounded-lg flex items-center justify-center">
                     <div className="w-28 h-28 bg-card rounded-lg flex items-center justify-center">
@@ -68,7 +68,7 @@ const Portfolio = () => {
                 </div>
               </PixelCard>
               
-              <PixelCard variant="glow">
+              <PixelCard variant="glow" className="h-full">
                 <h3 className="text-xl font-bold text-pixel-yellow mb-4">Skills & Interests</h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">

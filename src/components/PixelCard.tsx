@@ -11,7 +11,7 @@ export const PixelCard = ({
   children, 
   className, 
   variant = 'default', 
-  hover = true 
+  hover = false 
 }: PixelCardProps) => {
   const variants = {
     default: 'bg-card border-2 border-border',
