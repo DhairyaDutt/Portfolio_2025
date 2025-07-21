@@ -67,24 +67,30 @@ const Portfolio = () => {
               </PixelCard>
               
               <PixelCard variant="glow" className="h-full">
-                <h3 className="text-xl font-bold text-pixel-yellow mb-4">Skills & Interests</h3>
+                <h3 className="text-xl font-bold text-pixel-yellow mb-4">Technical Skills</h3>
+
+                <div className="flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-pixel-yellow rounded-full"></span>
+                  <span className="text-muted-foreground">Fundamentals: DSA, DBMS, OS, OOPs, System Design</span>
+                </div>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-green rounded-full"></span>
-                    <span className="text-muted-foreground">React, TypeScript, Node.js</span>
+                    <span className="text-muted-foreground">Languages: C++, MySQL, Java, Python</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-cyan rounded-full"></span>
-                    <span className="text-muted-foreground">Machine Learning & AI</span>
+                    <span className="text-muted-foreground">Web Development: React, Figma</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="w-2 h-2 bg-pixel-cyan rounded-full"></span>
+                    <span className="text-muted-foreground">Machine Learning & AI: Selenium, NLP, GPT API</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-purple rounded-full"></span>
-                    <span className="text-muted-foreground">Cloud Computing & DevOps</span>
+                    <span className="text-muted-foreground">Cloud Computing & DevOps: BigQuery, Github</span>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="w-2 h-2 bg-pixel-yellow rounded-full"></span>
-                    <span className="text-muted-foreground">Open Source Contributor</span>
-                  </div>
+                  
                 </div>
               </PixelCard>
             </div>
