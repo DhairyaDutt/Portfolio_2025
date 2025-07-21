@@ -26,7 +26,7 @@ const Portfolio = () => {
               DHAIRYA
             </h1>
             <p className="text-2xl md:text-3xl text-pixel-yellow pixel-glow font-bold">
-              Full-Stack Dev
+              Software Engineer
             </p>
             <div className="mt-8 flex justify-center space-x-6">
               <a href="https://github.com/DhairyaDutt" target="_blank" className="text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
@@ -60,7 +60,7 @@ const Portfolio = () => {
                     <div className="mb-2">$ whoami</div>
                     <div className="mb-4 text-pixel-green">dhairya@portfolio:~$</div>
                     <div className="text-foreground">
-                      A passionate Software Engineer who loves problem solving.
+                      A passionate Software Engineer and a problem-solver who graduated with a master's degree in Information Technology and Analytics with a solid GPA of 4.0.
                     </div>
                   </div>
                 </div>
