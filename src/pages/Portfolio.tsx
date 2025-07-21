@@ -308,7 +308,7 @@ const Portfolio = () => {
                     { icon: "🎮", label: "Gaming", color: "pixel-cyan" },
                     { icon: "📚", label: "Reading", color: "pixel-green" },
                     { icon: "💪", label: "Fitness", color: "pixel-orange" },
-                    { icon: "🎵", label: "Guitar", color: "pixel-purple" }
+                    { icon: "🎵", label: "Music", color: "pixel-purple" }
                   ].map((hobby, index) => (
                     <div key={index} className="text-center">
                       <div className={`w-16 h-16 bg-${hobby.color}/20 border border-${hobby.color} rounded-lg mx-auto mb-2 flex items-center justify-center text-2xl`}>
