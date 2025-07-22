@@ -9,7 +9,13 @@ export const TorchEffect = ({ children, onTurnOn }: TorchEffectProps) => {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
   const [buttonPosition, setButtonPosition] = useState({ x: 50, y: 50 });
   const [isVisible, setIsVisible] = useState(true);
+  const [showButton, setShowButton] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
+  // Delay showing the button to prevent initial flash
+  useEffect(() => {
+    const timer = setTimeout(() => setShowButton(true), 1000); // 1 second delay
+    return () => clearTimeout(timer);
+  }, []);
 
   // Generate random button position on mount
   useEffect(() => {
@@ -54,21 +60,23 @@ export const TorchEffect = ({ children, onTurnOn }: TorchEffectProps) => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {children}
-      
-      {/* Turn On Button */}
-      <button
-        onClick={handleTurnOn}
-        className={`pixel-button fixed z-[1001] transition-opacity duration-300 ${
-          isButtonInTorch() ? 'opacity-100' : 'opacity-0'
-        }`}
-        style={{
-          left: `${buttonPosition.x}%`,
-          top: `${buttonPosition.y}%`,
-          transform: 'translate(-50%, -50%)',
-        }}
-      >
-        Turn On
-      </button>
+
+      {/* Turn On Button (delayed render) */}
+      {showButton && (
+        <button
+          onClick={handleTurnOn}
+          className={`pixel-button fixed z-[1001] transition-opacity duration-300 ${
+            isButtonInTorch() ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{
+            left: `${buttonPosition.x}%`,
+            top: `${buttonPosition.y}%`,
+            transform: 'translate(-50%, -50%)',
+          }}
+        >
+          Turn On
+        </button>
+      )}
 
       {/* Torch Overlay */}
       {isVisible && (

@@ -2,6 +2,8 @@ import Navigation from '@/components/Navigation';
 import { PixelCard } from '@/components/PixelCard';
 import { Github, Linkedin, Mail, ExternalLink, Code, Calendar, MapPin } from 'lucide-react';
 
+
+
 const Portfolio = () => {
   return (
     <div 
@@ -51,11 +53,19 @@ const Portfolio = () => {
             <div className="grid md:grid-cols-2 gap-8 items-stretch">
               <PixelCard variant="terminal" className="pixel-float no-controls h-full">
                 <div className="mt-8">
-                  <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-pixel-cyan to-pixel-purple rounded-lg flex items-center justify-center">
-                    <div className="w-28 h-28 bg-card rounded-lg flex items-center justify-center">
-                      <span className="text-4xl">👨‍💻</span>
+                  <div className="w-44 h-44 mx-auto mb-6 bg-gradient-to-br from-pixel-cyan to-pixel-purple rounded-lg flex items-center justify-center">
+                    <div className="w-40 h-40 bg-card rounded-lg overflow-hidden">
+                      <img
+                        src="/lovable-uploads/me5.jpg"
+                        alt="Pixelated Avatar"
+                        className="w-full h-full object-cover transition-all duration-300"
+                        // style={{ imageRendering: 'pixelated' }}
+                        // onMouseEnter={(e) => e.currentTarget.style.imageRendering = 'auto'}
+                        // onMouseLeave={(e) => e.currentTarget.style.imageRendering = 'pixelated'}
+                      />
                     </div>
                   </div>
+
                   <div className="text-terminal-text">
                     <div className="mb-2">$ whoami</div>
                     <div className="mb-4 text-pixel-green">dhairya@portfolio:~$</div>
@@ -69,11 +79,12 @@ const Portfolio = () => {
               <PixelCard variant="glow" className="h-full">
                 <h3 className="text-xl font-bold text-pixel-yellow mb-4">Technical Skills</h3>
 
-                <div className="flex items-center space-x-2">
-                  <span className="w-2 h-2 bg-pixel-yellow rounded-full"></span>
-                  <span className="text-muted-foreground">Fundamentals: DSA, DBMS, OS, OOPs, System Design</span>
-                </div>
+                
                 <div className="space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <span className="w-2 h-2 bg-pixel-yellow rounded-full"></span>
+                    <span className="text-muted-foreground">Fundamentals: DSA, DBMS, OS, OOPs, System Design</span>
+                  </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-2 h-2 bg-pixel-green rounded-full"></span>
                     <span className="text-muted-foreground">Languages: C++, MySQL, Java, Python, Javascript</span>
@@ -107,7 +118,14 @@ const Portfolio = () => {
               <PixelCard variant="project" className="pixel-float">
                 <div className="flex items-start space-x-4">
                   <div className="w-16 h-16 bg-pixel-purple rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">🎓</span>
+                    <img
+                      src="/lovable-uploads/rit.png"
+                      alt="Pixelated Avatar"
+                      className="w-full h-full object-cover transition-all duration-300"
+                      // style={{ imageRendering: 'pixelated' }}
+                      // onMouseEnter={(e) => e.currentTarget.style.imageRendering = 'auto'}
+                      // onMouseLeave={(e) => e.currentTarget.style.imageRendering = 'pixelated'}
+                    />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-pixel-yellow">Master of Science</h3>
@@ -129,7 +147,14 @@ const Portfolio = () => {
               <PixelCard variant="project" className="pixel-float">
                 <div className="flex items-start space-x-4">
                   <div className="w-16 h-16 bg-pixel-green rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl">📚</span>
+                    <img
+                      src="/lovable-uploads/nirma.png"
+                      alt="Pixelated Avatar"
+                      className="w-full h-full object-cover transition-all duration-300"
+                      // style={{ imageRendering: 'pixelated' }}
+                      // onMouseEnter={(e) => e.currentTarget.style.imageRendering = 'auto'}
+                      // onMouseLeave={(e) => e.currentTarget.style.imageRendering = 'pixelated'}
+                    />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-pixel-yellow">Bachelor of Science</h3>
@@ -151,7 +176,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects" className="min-h-screen flex items-center justify-center py-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-pixel-cyan pixel-glow-subtle mb-12 text-center">
@@ -160,28 +184,39 @@ const Portfolio = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  title: "AI-Powered Web App",
-                  description: "A machine learning platform with real-time predictions and interactive visualizations.",
-                  tech: ["React", "Python", "TensorFlow"],
-                  color: "pixel-cyan"
+                  title: "AutoApply AI (3A)",
+                  description: "Automated 300+ job applications across platforms like LinkedIn, Greenhouse, and Lever using Python, Selenium, and AI-powered form handling.",
+                  tech: ["Selenium", "NLP", "GPT"],
+                  color: "pixel-cyan",
+                  codeLink: "https://github.com/DhairyaDutt/AutoApplyAI"
                 },
                 {
-                  title: "Blockchain Voting System",
-                  description: "Secure and transparent voting platform built on Ethereum with smart contracts.",
-                  tech: ["Solidity", "Web3.js", "Node.js"],
-                  color: "pixel-purple"
+                  title: "Recipe Generator",
+                  description: "Applied TF-IDF Vectorizer and cosine similarity on the data structure (Inverted Index) to extract features and show top 5 matched results with an accuracy of 85%.",
+                  tech: ["Python", "Inverted Index"],
+                  color: "pixel-purple",
+                  codeLink: "https://github.com/DhairyaDutt/Recipe_Generator"
                 },
                 {
-                  title: "Cloud-Native Microservices",
-                  description: "Scalable microservices architecture deployed on Kubernetes with CI/CD pipeline.",
-                  tech: ["Docker", "Kubernetes", "Go"],
-                  color: "pixel-green"
+                  title: "Chicago Crime Project",
+                  description: "Delivered selection of 5 optimal wards by querying and filtering data in BigQuery, and provided clear real estate insights through interactive dashboards in Looker Studio.",
+                  tech: ["BigQuery", "Looker Studio"],
+                  color: "pixel-green",
+                  codeLink: "#"
                 },
                 {
-                  title: "Real-time Chat Platform",
-                  description: "High-performance chat application with WebSocket connections and message encryption.",
-                  tech: ["Socket.io", "Redis", "MongoDB"],
-                  color: "pixel-yellow"
+                  title: "Employee Management System",
+                  description: "Developed a management system using C++ that could maintain 50 employees' data with proper hierarchy.",
+                  tech: ["C++", "BST", "OOPs"],
+                  color: "pixel-green",
+                  codeLink: "#"
+                },
+                {
+                  title: "HeartWise",
+                  description: "Identified key heart disease risk factors using statistical analysis and logistic regression with a p-value cutoff of 0.05 to ensure model robustness.",
+                  tech: ["Statistical Methods", "Hypothesis Testing"],
+                  color: "pixel-cyan",
+                  codeLink: "https://github.com/DhairyaDutt/HeartWise"
                 }
               ].map((project, index) => (
                 <PixelCard key={index} variant="project" className="pixel-float">
@@ -198,20 +233,24 @@ const Portfolio = () => {
                     ))}
                   </div>
                   <div className="flex space-x-4">
-                    <button className="flex items-center space-x-1 text-pixel-cyan hover:text-pixel-cyan/80 transition-colors">
-                      <Code size={16} />
-                      <span>Code</span>
-                    </button>
-                    <button className="flex items-center space-x-1 text-pixel-green hover:text-pixel-green/80 transition-colors">
-                      <ExternalLink size={16} />
-                      <span>Demo</span>
-                    </button>
+                    {project.codeLink && (
+                      <a
+                        href={project.codeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-1 text-pixel-cyan hover:text-pixel-cyan/80 transition-colors"
+                      >
+                        <Code size={16} />
+                        <span>Code</span>
+                      </a>
+                    )}
                   </div>
                 </PixelCard>
               ))}
             </div>
           </div>
         </section>
+
 
         {/* Experience Section */}
         <section id="experience" className="min-h-screen flex items-center justify-center py-20">
@@ -307,7 +346,7 @@ const Portfolio = () => {
                   {[
                     { icon: "🎮", label: "Gaming", color: "pixel-cyan" },
                     { icon: "📚", label: "Reading", color: "pixel-green" },
-                    { icon: "💪", label: "Fitness", color: "pixel-orange" },
+                    { icon: "💪", label: "Fitness", color: "pixel-cyan" },
                     { icon: "🎵", label: "Music", color: "pixel-purple" }
                   ].map((hobby, index) => (
                     <div key={index} className="text-center">
