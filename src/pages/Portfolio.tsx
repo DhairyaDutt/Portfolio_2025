@@ -9,7 +9,7 @@ const Portfolio = () => {
     <div 
       className="min-h-screen relative"
       style={{
-        backgroundImage: `url(/lovable-uploads/6a2a7baa-b45f-43b1-987a-1dc481c1f085.png)`,
+        backgroundImage: `url(lovable-uploads/6a2a7baa-b45f-43b1-987a-1dc481c1f085.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -56,7 +56,7 @@ const Portfolio = () => {
                   <div className="w-44 h-44 mx-auto mb-6 bg-gradient-to-br from-pixel-cyan to-pixel-purple rounded-lg flex items-center justify-center">
                     <div className="w-40 h-40 bg-card rounded-lg overflow-hidden">
                       <img
-                        src="/lovable-uploads/me5.jpg"
+                        src="lovable-uploads/me5.jpg"
                         alt="Pixelated Avatar"
                         className="w-full h-full object-cover transition-all duration-300"
                         // style={{ imageRendering: 'pixelated' }}
@@ -119,7 +119,7 @@ const Portfolio = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-16 h-16 bg-pixel-purple rounded-lg flex items-center justify-center flex-shrink-0">
                     <img
-                      src="/lovable-uploads/rit.png"
+                      src="lovable-uploads/rit.png"
                       alt="Pixelated Avatar"
                       className="w-full h-full object-cover transition-all duration-300"
                       // style={{ imageRendering: 'pixelated' }}
@@ -148,7 +148,7 @@ const Portfolio = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-16 h-16 bg-pixel-green rounded-lg flex items-center justify-center flex-shrink-0">
                     <img
-                      src="/lovable-uploads/nirma.png"
+                      src="lovable-uploads/nirma.png"
                       alt="Pixelated Avatar"
                       className="w-full h-full object-cover transition-all duration-300"
                       // style={{ imageRendering: 'pixelated' }}
@@ -359,7 +359,7 @@ const Portfolio = () => {
                 </div>
                 <p className="text-foreground text-center">
                   When I'm not coding, you'll find me playing CS2, diving into self-development books (trying), 
-                  hitting the gym (trying), or playing GUItar. I'm a knight on Leetcode (1193 best rank). I also strongly bevlieve in giving
+                  hitting the gym (trying), or playing GUItar. I'm a knight on Leetcode (1193 best rank). I also strongly believe in giving
                   back to the community, thus as a graduate asst. I help students in resume reviews and teaching them fundamental CS concepts, I love it :)
                 </p>
               </div>
