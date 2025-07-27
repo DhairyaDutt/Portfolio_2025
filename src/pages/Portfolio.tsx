@@ -9,7 +9,7 @@ const Portfolio = () => {
     <div 
       className="min-h-screen relative"
       style={{
-        backgroundImage: `url(lovable-uploads/6a2a7baa-b45f-43b1-987a-1dc481c1f085.png)`,
+        backgroundImage: `url(/lovable-uploads/6a2a7baa-b45f-43b1-987a-1dc481c1f085.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
